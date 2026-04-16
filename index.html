@@ -67,6 +67,97 @@
     }
     .project a:hover { background: #764ba2; }
     .star { color: #f1c40f; }
+    
+    /* Bio Section Styles */
+    .bio-section {
+      background: white;
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+      margin-bottom: 30px;
+    }
+    .bio-section h2 {
+      color: #333;
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #667eea;
+      padding-bottom: 10px;
+    }
+    .bio-section p {
+      color: #555;
+      font-size: 1em;
+      line-height: 1.8;
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+    .bio-section .subtitle {
+      color: #667eea;
+      font-size: 1.1em;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .research-interests {
+      background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+      border-radius: 12px;
+      padding: 25px;
+      margin: 25px 0;
+    }
+    .research-interests h3 {
+      color: #333;
+      font-size: 1.2em;
+      margin-bottom: 15px;
+    }
+    .research-interests ul {
+      list-style: none;
+      padding: 0;
+    }
+    .research-interests li {
+      color: #555;
+      padding: 8px 0;
+      padding-left: 25px;
+      position: relative;
+    }
+    .research-interests li::before {
+      content: "▸";
+      color: #667eea;
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+    }
+    .affiliations {
+      background: #f8f9fa;
+      border-left: 4px solid #667eea;
+      padding: 15px 20px;
+      margin: 20px 0;
+      border-radius: 0 8px 8px 0;
+    }
+    .affiliations p {
+      margin-bottom: 0;
+      font-style: italic;
+    }
+    .bio-links {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 25px;
+    }
+    .bio-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: 500;
+      font-size: 0.95em;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .bio-links a:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+    }
   </style>
 </head>
 <body>
@@ -85,6 +176,45 @@
         </a>
       </div>
     </header>
+
+    <!-- Bio Section -->
+    <section class="bio-section">
+      <h2>About Me</h2>
+      <p class="subtitle">Biomedical Engineer | AI Researcher | Scientist</p>
+      
+      <p>Dr. Abdulkader Helwan is a Lebanese biomedical engineer and artificial intelligence researcher whose work bridges healthcare, computational intelligence, and deep learning. He holds a PhD in Biomedical Engineering from Near East University, where his doctoral research focused on fuzzy neural networks for breast cancer identification using medical imaging.</p>
+      
+      <p>Over the past decade, Dr. Helwan has contributed to academia and industry through roles at institutions such as Linköping University (Sweden), Lebanese American University, and the University of Malta, as well as collaborations with Degen Medical (USA). His projects span medical image analysis, computational neuroscience, radionuclide identification, and multimodal AI models for disease diagnosis and grading.</p>
+      
+      <p>He has authored numerous peer-reviewed publications in journals including <em>Physiological Measurement</em>, <em>Diagnostics</em>, and the <em>Journal of Personalized Medicine</em>, and has presented at international conferences on biomedical engineering, machine learning, and healthcare AI.</p>
+      
+      <div class="research-interests">
+        <h3>🔬 Research Interests</h3>
+        <ul>
+          <li>Deep learning and neural networks in medicine</li>
+          <li>Biomedical image and signal processing</li>
+          <li>Large language models and vision transformers for healthcare applications</li>
+          <li>Computational intelligence and decision-making in medical systems</li>
+        </ul>
+      </div>
+      
+      <div class="affiliations">
+        <p>Dr. Helwan is a member of the <strong>Order of Engineers (Lebanon)</strong>, the <strong>Bioinformatics Organization (USA)</strong>, and the <strong>International Association of Engineers (IAENG)</strong>. He has also co-authored books on intelligent systems for breast cancer and rheumatoid arthritis diagnosis.</p>
+      </div>
+      
+      <p>Beyond research, he is passionate about teaching, mentoring, and advancing AI applications in healthcare. Fluent in English and Arabic, he combines technical expertise with a collaborative spirit, making him a sought-after contributor to interdisciplinary projects at the intersection of engineering, medicine, and artificial intelligence.</p>
+      
+      <div class="bio-links">
+        <a href="https://scholar.google.com/citations?hl=en&user=abdulkader+helwan" target="_blank">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+          📚 Google Scholar
+        </a>
+        <a href="https://www.linkedin.com/in/abdulkader-helwan-phd-06530816a" target="_blank">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          🔗 LinkedIn
+        </a>
+      </div>
+    </section>
 
     <h2 class="section-title">Featured Projects</h2>
     <div class="projects">
